@@ -40,7 +40,7 @@ const MovieDetails = () => {
       {error && !isLoading && (
         <Alert variant="danger">{errorMsg ? errorMsg : "Something went wrong while trying to retrieve data."}</Alert>
       )}
-      <img src={movie.Poster} alt="img" />
+      <img src={movie.Poster} alt="movie-pic" />
       <Row>
         <Col>
           {error && !isLoading && (
@@ -51,7 +51,7 @@ const MovieDetails = () => {
           <p>{movie.Title}</p>
           <p>{movie.Genre}</p>
           <p>{movie.Plot}</p>
-          <Badge variant="danger">{movie.imbdRating}</Badge>
+          <Badge variant="danger">{movie.imdbRating}</Badge>
         </Col>
       </Row>
     </Container>

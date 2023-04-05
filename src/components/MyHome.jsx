@@ -59,7 +59,7 @@ const TVShows = () => {
             )}
             <div className="row g-1 flex-nowrap movie-list py-2">
               {HarryPotter.map(movie => (
-                <MyMovie imbdID={movie.imdbID} src={movie.Poster} alt={movie.Title} />
+                <MyMovie imdbID={movie.imdbID} key={movie.imdbID} src={movie.Poster} alt={movie.Title} />
               ))}
             </div>
           </div>
@@ -76,7 +76,7 @@ const TVShows = () => {
             )}
             <div className="row g-1 flex-nowrap movie-list py-2">
               {LordOfTheRings.map(movie => (
-                <MyMovie imbdID={movie.imdbID} src={movie.Poster} alt={movie.Title} />
+                <MyMovie imdbID={movie.imdbID} key={movie.imdbID} src={movie.Poster} alt={movie.Title} />
               ))}
             </div>
           </div>
@@ -93,7 +93,7 @@ const TVShows = () => {
             )}
             <div className="row g-1 flex-nowrap movie-list py-2">
               {IndianaJones.map(movie => (
-                <MyMovie imbdID={movie.imdbID} src={movie.Poster} alt={movie.Title} />
+                <MyMovie imdbID={movie.imdbID} key={movie.imdbID} src={movie.Poster} alt={movie.Title} />
               ))}
             </div>
           </div>
@@ -110,7 +110,7 @@ const TVShows = () => {
             )}
             <div className="row g-1 flex-nowrap movie-list py-2">
               {Batman.map(movie => (
-                <MyMovie imbdID={movie.imdbID} src={movie.Poster} alt={movie.Title} />
+                <MyMovie imdbID={movie.imdbID} key={movie.imdbID} src={movie.Poster} alt={movie.Title} />
               ))}
             </div>
           </div>

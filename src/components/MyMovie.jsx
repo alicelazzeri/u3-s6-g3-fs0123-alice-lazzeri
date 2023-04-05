@@ -1,7 +1,9 @@
+import { logDOM } from "@testing-library/react";
 import { useNavigate } from "react-router-dom";
 
 const MyMovie = props => {
   const navigate = useNavigate();
+  console.log(props);
   return (
     <>
       <div className="col-6 col-md-3 col-lg-2">
