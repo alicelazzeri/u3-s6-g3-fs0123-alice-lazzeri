@@ -19,6 +19,8 @@ const TVShows = () => {
         const data = await response.json();
         setStato(data.Search);
         setIsLoading(false);
+
+        //this.setState({ [state]: data.Search, isLoading: false });
       } else {
         setError(true);
         setIsLoading(false);
